@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: amolecoin
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: amolecoin
+  template:
+    metadata:
+      labels:
+        app: amolecoin
+        version: v0.15
+    spec:
+      containers:
+      - name: amolecoin
+        image: amolecoin/amolecoin
+        ports:
+        - containerPort: 9982
+          name: amolecoin
+          protocol: TCP
