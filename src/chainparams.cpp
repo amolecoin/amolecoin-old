@@ -74,7 +74,7 @@ class CMainParams : public CChainParams {
 public:
     CMainParams() {
         strNetworkID = "main";
-        consensus.nSubsidyHalvingInterval = 248098;
+        consensus.nSubsidyHalvingInterval = 125000;
         consensus.BIP34Height = 0;
         consensus.BIP34Hash = uint256S("f40e7646b3d251766a184024ebc024035edae584e0694dc875edc9757e267af5");
         consensus.BIP65Height = 0; // bab3041e8977e0dc3eeff63fe707b92bde1dd449d8efafb248c27c8264cc311a
